@@ -12,4 +12,5 @@ from . import (
     sampling,
     tokenizers,
     url,
+    part_of_speech
 )
