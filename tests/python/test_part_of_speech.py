@@ -1,6 +1,7 @@
 import unittest
 
 from dolma.core.data_types import Document
+from dolma.core.utils import split_words
 from dolma.taggers.part_of_speech import PartOfSpeechTagger
 
 POS_TEST = """
@@ -18,5 +19,5 @@ class TestPOSTagger(unittest.TestCase):
 
     def test_pos(self):
         result = PartOfSpeechTagger().predict(self.doc)
-        self.assertEqual(len(result.spans), len(POS_TEST))
+        self.assertEqual(len(result.spans), len(split_words(POS_TEST)))
 

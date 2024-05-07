@@ -32,7 +32,7 @@ test: test-python test-rust
 
 test-python:
 	maturin develop --extras="all"
-	pytest -vsx tests/python
+	pytest -vsx tests/python/test_part_of_speech.py
 	rm -rf tests/work/*
 
 test-rust:

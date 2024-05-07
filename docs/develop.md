@@ -34,7 +34,7 @@ You can choose to run just the Python or Rust tests by calling `make test-python
 You can skip S3 related tests by exporting `DOLMA_TESTS_SKIP_AWS=True`
 
 ```shell
-DOLMA_TESTS_SKIP_AWS=True make test
+DOLMA_TESTS_SKIP_AWS=True make test-python
 ```
 
 ## Contributing
